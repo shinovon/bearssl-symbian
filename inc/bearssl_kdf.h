@@ -26,7 +26,7 @@
 #define BR_BEARSSL_KDF_H__
 
 #include <stddef.h>
-#include <stdint.h>
+#include "bearssl_stdint.h"
 
 #include "bearssl_hash.h"
 #include "bearssl_hmac.h"

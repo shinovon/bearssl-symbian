@@ -26,7 +26,7 @@
 #define BR_BEARSSL_EC_H__
 
 #include <stddef.h>
-#include <stdint.h>
+#include "bearssl_stdint.h"
 
 #include "bearssl_rand.h"
 

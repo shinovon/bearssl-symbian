@@ -1,7 +1,7 @@
 /* Automatically generated code; do not modify directly. */
 
 #include <stddef.h>
-#include <stdint.h>
+#include "bearssl_stdint.h"
 
 typedef struct {
 	uint32_t *dp;

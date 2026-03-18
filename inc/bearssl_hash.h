@@ -26,7 +26,7 @@
 #define BR_BEARSSL_HASH_H__
 
 #include <stddef.h>
-#include <stdint.h>
+#include "bearssl_stdint.h"
 #include <string.h>
 
 #ifdef __cplusplus

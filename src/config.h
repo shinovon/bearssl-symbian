@@ -152,8 +152,9 @@
  * returned value (a 'time_t') is an integer that counts time in seconds
  * since the Unix Epoch (Jan 1st, 1970, 00:00 UTC).
  *
-#define BR_USE_UNIX_TIME   1
  */
+#define BR_USE_UNIX_TIME   1
+
 
 /*
  * When BR_USE_WIN32_TIME is enabled, the X.509 validation engine obtains

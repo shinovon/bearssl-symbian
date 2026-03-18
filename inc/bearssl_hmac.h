@@ -26,7 +26,7 @@
 #define BR_BEARSSL_HMAC_H__
 
 #include <stddef.h>
-#include <stdint.h>
+#include "bearssl_stdint.h"
 
 #include "bearssl_hash.h"
 

@@ -26,7 +26,7 @@
 #define BR_BEARSSL_H__
 
 #include <stddef.h>
-#include <stdint.h>
+#include "bearssl_stdint.h"
 
 /** \mainpage BearSSL API
  *
@@ -123,6 +123,10 @@
  * on the [BearSSL Web site](https://www.bearssl.org/api1.html). The
  * BearSSL source archive also comes with sample code.
  */
+
+#if defined(__ARMCC__) && defined(__SYMBIAN32__)
+#define inline __inline
+#endif
 
 #include "bearssl_hash.h"
 #include "bearssl_hmac.h"
