@@ -3,3 +3,19 @@ DEFAULT
 
 PRJ_MMPFILES
 bearssl.mmp
+
+PRJ_EXPORTS
+../inc/bearssl.h bearssl/bearssl.h
+../inc/bearssl_aead.h bearssl/bearssl_aead.h
+../inc/bearssl_block.h bearssl/bearssl_block.h
+../inc/bearssl_ec.h bearssl/bearssl_ec.h
+../inc/bearssl_hash.h bearssl/bearssl_hash.h
+../inc/bearssl_hmac.h bearssl/bearssl_hmac.h
+../inc/bearssl_kdf.h bearssl/bearssl_kdf.h
+../inc/bearssl_pem.h bearssl/bearssl_pem.h
+../inc/bearssl_prf.h bearssl/bearssl_prf.h
+../inc/bearssl_rand.h bearssl/bearssl_rand.h
+../inc/bearssl_rsa.h bearssl/bearssl_rsa.h
+../inc/bearssl_ssl.h bearssl/bearssl_ssl.h
+../inc/bearssl_stdint.h bearssl/bearssl_stdint.h
+../inc/bearssl_x509.h bearssl/bearssl_x509.h

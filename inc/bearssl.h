@@ -128,6 +128,10 @@
 #define inline __inline
 #endif
 
+#if defined(__WINS__)
+#undef _WIN32
+#endif
+
 #include "bearssl_hash.h"
 #include "bearssl_hmac.h"
 #include "bearssl_kdf.h"

@@ -1,3 +1,7 @@
+*.bat
+*.d
+*.sis
+
 # eclipse
 .project
 .cproject
