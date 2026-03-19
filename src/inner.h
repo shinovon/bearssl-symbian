@@ -1910,40 +1910,6 @@ unsigned br_aes_ct64_keysched(uint64_t *comp_skey,
 void br_aes_ct64_skey_expand(uint64_t *skey,
 	unsigned num_rounds, const uint64_t *comp_skey);
 
-/*
- * Test support for AES-NI opcodes.
- */
-int br_aes_x86ni_supported(void);
-
-/*
- * AES key schedule, using x86 AES-NI instructions. This yields the
- * subkeys in the encryption direction. Number of rounds is returned.
- * Key size MUST be 16, 24 or 32 bytes; otherwise, 0 is returned.
- */
-unsigned br_aes_x86ni_keysched_enc(unsigned char *skni,
-	const void *key, size_t len);
-
-/*
- * AES key schedule, using x86 AES-NI instructions. This yields the
- * subkeys in the decryption direction. Number of rounds is returned.
- * Key size MUST be 16, 24 or 32 bytes; otherwise, 0 is returned.
- */
-unsigned br_aes_x86ni_keysched_dec(unsigned char *skni,
-	const void *key, size_t len);
-
-/*
- * Test support for AES POWER8 opcodes.
- */
-int br_aes_pwr8_supported(void);
-
-/*
- * AES key schedule, using POWER8 instructions. This yields the
- * subkeys in the encryption direction. Number of rounds is returned.
- * Key size MUST be 16, 24 or 32 bytes; otherwise, 0 is returned.
- */
-unsigned br_aes_pwr8_keysched(unsigned char *skni,
-	const void *key, size_t len);
-
 /* ==================================================================== */
 /*
  * RSA.
