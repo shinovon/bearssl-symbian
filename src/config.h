@@ -48,8 +48,8 @@
  * 64-bit results. This is typically the case on low-end ARM Cortex M
  * systems (M0, M0+, M1, and arguably M3 and M4 as well).
  *
-#define BR_LOMUL   1
  */
+#define BR_LOMUL   1
 
 /*
  * When BR_SLOW_MUL is enabled, multiplications are assumed to be

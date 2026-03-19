@@ -2,6 +2,7 @@ PRJ_PLATFORMS
 DEFAULT
 
 PRJ_MMPFILES
+bearssl_rsa.mmp
 bearssl.mmp
 
 PRJ_EXPORTS
