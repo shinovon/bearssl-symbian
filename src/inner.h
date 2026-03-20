@@ -349,7 +349,7 @@
 #endif
 
 #ifndef BR_USE_WIN32_RAND
-#if defined _WIN32 || defined _WIN64
+#if (defined _WIN32 || defined _WIN64) && !(defined __WINS__ || defined __WINSCW__)
 #define BR_USE_WIN32_RAND   1
 #endif
 #endif
@@ -445,7 +445,7 @@
 #endif
 
 #ifndef BR_USE_WIN32_TIME
-#if defined _WIN32 || defined _WIN64
+#if (defined _WIN32 || defined _WIN64) && !(defined __WINS__ || defined __WINSCW__)
 #define BR_USE_WIN32_TIME   1
 #endif
 #endif

@@ -27,8 +27,6 @@ SOURCEPATH ..\src\mac
 SOURCE hmac.c hmac_ct.c
 SOURCEPATH ..\src\rand
 SOURCE aesctr_drbg.c hmac_drbg.c sysrng.c
-SOURCEPATH ..\src
-SOURCE settings.c
 SOURCEPATH ..\src\ssl
 SOURCE prf.c prf_md5sha1.c prf_sha256.c prf_sha384.c ssl_ccert_single_ec.c ssl_ccert_single_rsa.c ssl_client.c ssl_client_default_rsapub.c ssl_client_full.c ssl_engine.c ssl_engine_default_aescbc.c ssl_engine_default_aesccm.c ssl_engine_default_aesgcm.c ssl_engine_default_chapol.c ssl_engine_default_descbc.c ssl_engine_default_ec.c ssl_engine_default_ecdsa.c ssl_engine_default_rsavrfy.c ssl_hashes.c ssl_hs_client.c ssl_io.c ssl_keyexport.c ssl_rec_cbc.c ssl_rec_ccm.c ssl_rec_chapol.c ssl_rec_gcm.c
 SOURCEPATH ..\src\symcipher
