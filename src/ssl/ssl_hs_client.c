@@ -170,13 +170,13 @@ make_pms_rsa(br_ssl_client_context *ctx, int prf_id)
 /*
  * OID for hash functions in RSA signatures.
  */
-static const unsigned char *HASH_OID[] = {
-	BR_HASH_OID_SHA1,
-	BR_HASH_OID_SHA224,
-	BR_HASH_OID_SHA256,
-	BR_HASH_OID_SHA384,
-	BR_HASH_OID_SHA512
-};
+//static const unsigned char *HASH_OID[] = {
+//	BR_HASH_OID_SHA1,
+//	BR_HASH_OID_SHA224,
+//	BR_HASH_OID_SHA256,
+//	BR_HASH_OID_SHA384,
+//	BR_HASH_OID_SHA512
+//};
 
 /*
  * Check the RSA signature on the ServerKeyExchange message.
@@ -196,6 +196,14 @@ verify_SKE_sig(br_ssl_client_context *ctx,
 	br_multihash_context mhc;
 	unsigned char hv[64], head[4];
 	size_t hv_len;
+	
+	const unsigned char *HASH_OID[] = {
+		BR_HASH_OID_SHA1,
+		BR_HASH_OID_SHA224,
+		BR_HASH_OID_SHA256,
+		BR_HASH_OID_SHA384,
+		BR_HASH_OID_SHA512
+	};
 
 	xc = ctx->eng.x509ctx;
 	pk = (*xc)->get_pkey(xc, NULL);

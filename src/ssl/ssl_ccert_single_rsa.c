@@ -89,14 +89,6 @@ static const unsigned char HASH_OID_SHA512[] = {
 	0x09, 0x60, 0x86, 0x48, 0x01, 0x65, 0x03, 0x04, 0x02, 0x03
 };
 
-static const unsigned char *HASH_OID[] = {
-	HASH_OID_SHA1,
-	HASH_OID_SHA224,
-	HASH_OID_SHA256,
-	HASH_OID_SHA384,
-	HASH_OID_SHA512
-};
-
 static size_t
 cc_do_sign(const br_ssl_client_certificate_class **pctx,
 	int hash_id, size_t hv_len, unsigned char *data, size_t len)
@@ -105,6 +97,14 @@ cc_do_sign(const br_ssl_client_certificate_class **pctx,
 	unsigned char hv[64];
 	const unsigned char *hash_oid;
 	size_t sig_len;
+	
+	const unsigned char *HASH_OID[] = {
+		HASH_OID_SHA1,
+		HASH_OID_SHA224,
+		HASH_OID_SHA256,
+		HASH_OID_SHA384,
+		HASH_OID_SHA512
+	};
 
 	zc = (br_ssl_client_certificate_rsa_context *)pctx;
 	memcpy(hv, data, hv_len);

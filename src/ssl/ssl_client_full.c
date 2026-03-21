@@ -102,7 +102,7 @@ br_ssl_client_init_full(br_ssl_client_context *cc,
 	 * Note: the X.509 validation engine will nonetheless refuse to
 	 * validate signatures that use MD5 as hash function.
 	 */
-	static const br_hash_class *hashes[] = {
+	const br_hash_class *hashes[] = {
 		&br_md5_vtable,
 		&br_sha1_vtable,
 		&br_sha224_vtable,
