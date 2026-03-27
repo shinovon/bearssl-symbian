@@ -66,8 +66,8 @@
  * operations, thus making it worth to make more integer operations if
  * it allows using less multiplications.
  *
-#define BR_SLOW_MUL15   1
  */
+#define BR_SLOW_MUL15   1
 
 /*
  * When BR_CT_MUL31 is enabled, multiplications of 31-bit values (used
@@ -85,8 +85,8 @@
  * larger than the normal multiplication, but should ensure
  * constant-time multiplications on most/all architectures where the
  * basic multiplication is not constant-time.
-#define BR_CT_MUL15   1
  */
+#define BR_CT_MUL15   1
 
 /*
  * When BR_NO_ARITH_SHIFT is enabled, arithmetic right shifts (with sign
